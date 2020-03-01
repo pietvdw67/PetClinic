@@ -1,6 +1,6 @@
 package za.org.infinity.petclinic.data.model;
 
-public class PetType {
+public class PetType extends BaseEntity  {
 	
 	private String name;
 
