@@ -1,5 +1,5 @@
-za\org\infinity\petclinic\data\model\Pet.class
-za\org\infinity\petclinic\data\model\Owner.class
 za\org\infinity\petclinic\data\model\PetType.class
 za\org\infinity\petclinic\data\model\Vet.class
+za\org\infinity\petclinic\data\model\Pet.class
+za\org\infinity\petclinic\data\model\Owner.class
 za\org\infinity\petclinic\data\model\Person.class
