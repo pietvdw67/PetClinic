@@ -1,13 +1,7 @@
 package za.org.infinity.petclinic.data.service;
 
-import java.util.Set;
-
 import za.org.infinity.petclinic.data.model.Pet;
 
-public interface PetService {
+public interface PetService   extends CrudService<Pet,Long>{
 	
-	Pet findById(Long id);
-	Pet save(Pet Pet);
-	Set<Pet> findAll();
-
 }
