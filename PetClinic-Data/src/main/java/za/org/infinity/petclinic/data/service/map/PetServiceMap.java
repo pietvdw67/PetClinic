@@ -3,9 +3,9 @@ package za.org.infinity.petclinic.data.service.map;
 import java.util.Set;
 
 import za.org.infinity.petclinic.data.model.Pet;
-import za.org.infinity.petclinic.data.service.CrudService;
+import za.org.infinity.petclinic.data.service.PetService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet,Long>{
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 	@Override
 	public Pet save(Pet object) {		

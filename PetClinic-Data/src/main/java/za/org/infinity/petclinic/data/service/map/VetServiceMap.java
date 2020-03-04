@@ -3,9 +3,9 @@ package za.org.infinity.petclinic.data.service.map;
 import java.util.Set;
 
 import za.org.infinity.petclinic.data.model.Vet;
-import za.org.infinity.petclinic.data.service.CrudService;
+import za.org.infinity.petclinic.data.service.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet,Long>{
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override
 	public Vet findById(Long id) {
