@@ -2,9 +2,12 @@ package za.org.infinity.petclinic.data.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import za.org.infinity.petclinic.data.model.Owner;
 import za.org.infinity.petclinic.data.service.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override

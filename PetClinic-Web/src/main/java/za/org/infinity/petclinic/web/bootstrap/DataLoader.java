@@ -7,8 +7,6 @@ import za.org.infinity.petclinic.data.model.Owner;
 import za.org.infinity.petclinic.data.model.Vet;
 import za.org.infinity.petclinic.data.service.OwnerService;
 import za.org.infinity.petclinic.data.service.VetService;
-import za.org.infinity.petclinic.data.service.map.OwnerServiceMap;
-import za.org.infinity.petclinic.data.service.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -16,9 +14,9 @@ public class DataLoader implements CommandLineRunner{
 	private final OwnerService ownerService; 
 	private final VetService vetService;
 	 
-	public DataLoader() {
-		ownerService = new OwnerServiceMap();
-		vetService = new VetServiceMap();
+	public DataLoader(OwnerService ownerService,VetService vetService) {
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
 	
 	@Override

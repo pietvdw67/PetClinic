@@ -2,9 +2,12 @@ package za.org.infinity.petclinic.data.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import za.org.infinity.petclinic.data.model.Vet;
 import za.org.infinity.petclinic.data.service.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override
