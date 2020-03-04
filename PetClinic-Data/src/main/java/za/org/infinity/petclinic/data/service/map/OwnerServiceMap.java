@@ -11,11 +11,6 @@ import za.org.infinity.petclinic.data.service.OwnerService;
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
-	public Owner save(Owner object) {
-		return super.save(object.id,object);
-	}
-
-	@Override
 	public Set<Owner> findAll() {
 		return super.findAll();
 	}
@@ -26,8 +21,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 	}
 
 	@Override
-	public Owner save(Long id, Owner object) {		
-		return super.save(id, object);
+	public Owner save(Owner object) {		
+		return super.save(object);
 	}
 
 	@Override
