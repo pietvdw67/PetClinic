@@ -1,1 +1,5 @@
+za\org\infinity\petclinic\web\controller\OwnerController.class
+za\org\infinity\petclinic\web\controller\VetController.class
+za\org\infinity\petclinic\web\controller\IndexController.class
 za\org\infinity\petclinic\web\PetClinicApplication.class
+za\org\infinity\petclinic\web\bootstrap\DataLoader.class

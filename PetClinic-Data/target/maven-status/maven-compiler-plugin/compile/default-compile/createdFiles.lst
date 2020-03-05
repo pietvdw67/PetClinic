@@ -1,0 +1,14 @@
+za\org\infinity\petclinic\data\model\BaseEntity.class
+za\org\infinity\petclinic\data\model\PetType.class
+za\org\infinity\petclinic\data\service\map\OwnerServiceMap.class
+za\org\infinity\petclinic\data\service\CrudService.class
+za\org\infinity\petclinic\data\service\VetService.class
+za\org\infinity\petclinic\data\model\Person.class
+za\org\infinity\petclinic\data\service\map\VetServiceMap.class
+za\org\infinity\petclinic\data\service\PetService.class
+za\org\infinity\petclinic\data\model\Vet.class
+za\org\infinity\petclinic\data\model\Pet.class
+za\org\infinity\petclinic\data\model\Owner.class
+za\org\infinity\petclinic\data\service\OwnerService.class
+za\org\infinity\petclinic\data\service\map\AbstractMapService.class
+za\org\infinity\petclinic\data\service\map\PetServiceMap.class
