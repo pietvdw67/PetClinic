@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import za.org.infinity.petclinic.data.model.Speciality;
 
-public interface SpecialityRepository extends CrudRepository<Speciality,Long>{
+public interface SpecialityRepository extends CrudRepository<Speciality,Long >{
 
 }
