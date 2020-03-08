@@ -1,7 +1,14 @@
 package za.org.infinity.petclinic.data.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="specialities")
 public class Speciality extends BaseEntity {
 	
+	@Column(name="name")
 	private String description;
 
 	public String getDescription() {
