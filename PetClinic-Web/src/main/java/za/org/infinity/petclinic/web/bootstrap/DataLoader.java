@@ -10,10 +10,13 @@ import za.org.infinity.petclinic.data.model.Pet;
 import za.org.infinity.petclinic.data.model.PetType;
 import za.org.infinity.petclinic.data.model.Speciality;
 import za.org.infinity.petclinic.data.model.Vet;
+import za.org.infinity.petclinic.data.model.Visit;
 import za.org.infinity.petclinic.data.service.OwnerService;
+import za.org.infinity.petclinic.data.service.PetService;
 import za.org.infinity.petclinic.data.service.PetTypeService;
 import za.org.infinity.petclinic.data.service.SpecialityService;
 import za.org.infinity.petclinic.data.service.VetService;
+import za.org.infinity.petclinic.data.service.VisitService;
 
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -22,12 +25,16 @@ public class DataLoader implements CommandLineRunner{
 	private final VetService vetService;
 	private final PetTypeService petTypeService;
 	private final SpecialityService specialityService;
+	private final VisitService visitService;
+	private final PetService petService;
 	 
-	public DataLoader(OwnerService ownerService,VetService vetService,PetTypeService petTypeService,SpecialityService specialityService) {
+	public DataLoader(OwnerService ownerService,VetService vetService,PetTypeService petTypeService,SpecialityService specialityService,VisitService visitService,PetService petService) {
 		this.ownerService = ownerService;
 		this.vetService = vetService;
 		this.petTypeService = petTypeService;
 		this.specialityService = specialityService;
+		this.visitService = visitService;
+		this.petService = petService;
 	}
 	
 	@Override
@@ -65,6 +72,7 @@ public class DataLoader implements CommandLineRunner{
 		mikesPet.setBirthDate(LocalDate.now());
 		mikesPet.setName("Rosco");
 		owner1.getPets().add(mikesPet);
+		petService.save(mikesPet);
 		
 		Owner owner2 = new Owner();		
 		owner2.setFirstName("Fiona");
@@ -80,6 +88,13 @@ public class DataLoader implements CommandLineRunner{
 		fionasCat.setBirthDate(LocalDate.now());
 		fionasCat.setName("Kitty");
 		owner2.getPets().add(fionasCat);
+		petService.save(fionasCat);
+		
+		Visit visit = new Visit();
+		visit.setPet(fionasCat);
+		visit.setDate(LocalDate.now());
+		visit.setDescription("Sneezy Kitty");		
+		visitService.save(visit);
 		
 		System.out.println("Loaded Owners ...");
 		
